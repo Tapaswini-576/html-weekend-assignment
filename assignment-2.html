@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> assignment-2</title>
+    </head>
+    <style>
+        form {
+            border : 1px solid black;
+            padding: 10px;
+          }
+          
+    </style>
+    <body>
+        <p style=" margin-bottom: 50px;" >
+            People experience different symptoms, depending on the allergen and where it enters the body. Allergic reactions can involve many
+parts of the body at the same time.
+Nose, eyes, sinuses and throat
+When allergens are breathed in, the release of histamine causes the lining of the nose to produce more mucus and become swollen
+and inflamed. It causes the nose to run and itch, and violent sneezing may occur. Eyes may start to water and people may get a sore
+throat.
+Lungs and chest
+Asthma can be triggered during an allergic reaction. When an allergen is breathed in, the lining of the passages in the lungs swells and
+makes breathing difficult.
+Stomach and bowel
+Foods that commonly cause allergy include peanuts, seafood, dairy products and eggs. Cow's milk allergy in infants may occur and can
+cause eczema, asthma, colic and stomach upset. Some people cannot digest lactose (milk sugar). Lactose intolerance causes stomach
+upsets, but should not be confused with allergy.
+Skin
+Skin problems that can be triggered by allergy include atopic dermatitis (eczema) and urticaria (hives).
+        </p>
+        <h3>FROM</h3>
+        <form action="javascript:submitform()" onsubmit="return validate()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        <label for="optinos">Favorite Genre:</label>
+        <input list="options">
+        <datalist id="options">
+                <option value="horror">
+                    <option value="comedy">
+                        <option value="romance">
+                        </datalist><br><br>
+         <label>Checkbox:</label> 
+        <input type="checkbox" checked /> Subscribe to our newsletter via email<br /><br />
+        <input type="submit"  name="submit" value="submit">              
+    </form>          
+    <script>
+        function validate() {
+        }
+        function submitform(){
+            window.alert("form is submit");
+        }
+    </script>
+    <footer>
+        &copy; thanks for visit
+    </footer>
+    </body>
+</html>
