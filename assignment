@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>assignment</title>
+    </head>
+    <style>
+        .navigationBar {
+            background-color: #333;
+            overflow: hidden;
+          }
+      
+          .navigationBar a {
+            float: left;
+            color: hwb(0 89% 7%);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+          }
+      
+          .navigationBar a:hover {
+            background-color: hwb(0 80% 13%);
+            color: black;
+          }
+      
+          .navigationBar a.active {
+            background-color: #04aa6d;
+            color: white(228, 208, 208);
+          }
+          
+ </style>
+    <body>
+        <nav class="navigationBar"> 
+            <a class="active" href="http://127.0.0.1:5500/a1.html" onClick="activeHome()" id="home">Home</a>
+            <a class="" href="http://127.0.0.1:5500/a2.html" onClick="activecontactus()" id="contact us">Contact Us</a>
+           </nav>
+           <script type="text/javascript">
+            function activeHome() { 
+              document.getElementById("home").classList.add("active");
+              document.getElementById("contact us").classList.remove("active");
+            }
+            function activecontactus() {
+                document.getElementById("home").classList.remove("active");
+                document.getElementById("contact us").classList.add("active");
+            }
+        </script>
+        <hr/>
+        <footer>
+            &copy; click on home for visit our site & click on contact us for contacting us.
+        </footer>
+
+
+    </body>
+</html>
