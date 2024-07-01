@@ -1,62 +1,61 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang ="en">
     <head>
-        <title> assignment-2</title>
+        <title>Contact Us</title>
+        <link rel = "stylesheet" href = "style1.css">
     </head>
-    <style>
-        form {
-            border : 1px solid black;
-            padding: 10px;
-          }
-          
-    </style>
-    <body>
-        <p style=" margin-bottom: 50px;" >
-            People experience different symptoms, depending on the allergen and where it enters the body. Allergic reactions can involve many
-parts of the body at the same time.
-Nose, eyes, sinuses and throat
-When allergens are breathed in, the release of histamine causes the lining of the nose to produce more mucus and become swollen
-and inflamed. It causes the nose to run and itch, and violent sneezing may occur. Eyes may start to water and people may get a sore
-throat.
-Lungs and chest
-Asthma can be triggered during an allergic reaction. When an allergen is breathed in, the lining of the passages in the lungs swells and
-makes breathing difficult.
-Stomach and bowel
-Foods that commonly cause allergy include peanuts, seafood, dairy products and eggs. Cow's milk allergy in infants may occur and can
-cause eczema, asthma, colic and stomach upset. Some people cannot digest lactose (milk sugar). Lactose intolerance causes stomach
-upsets, but should not be confused with allergy.
-Skin
-Skin problems that can be triggered by allergy include atopic dermatitis (eczema) and urticaria (hives).
-        </p>
-        <h3>FROM</h3>
-        <form action="javascript:submitform()" onsubmit="return validate()">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-    
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea><br><br>
-        <label for="optinos">Favorite Genre:</label>
-        <input list="options">
-        <datalist id="options">
-                <option value="horror">
-                    <option value="comedy">
-                        <option value="romance">
-                        </datalist><br><br>
-         <label>Checkbox:</label> 
-        <input type="checkbox" checked /> Subscribe to our newsletter via email<br /><br />
-        <input type="submit"  name="submit" value="submit">              
-    </form>          
-    <script>
-        function validate() {
-        }
-        function submitform(){
-            window.alert("form is submit");
-        }
-    </script>
-    <footer>
-        &copy; thanks for visit
-    </footer>
+    <body style = "background-color: hsl(284, 31%, 48%)">
+        <div class = "verticalAlignParent">
+                <nav class = "navigationBar">
+                    <img src = "b1.jpg" alt = "logo" class = "imageDim verticalAlignTextBottom">
+                    The Wizarding World
+                    <a href = "contact.html" target ="_self" id = "contact">Contact Us</a>
+                </nav>
+        </div>
+    <hr>
+    <br /><br /><br />
+    <div class = "text3">
+        <hr>
+        <br>
+        We are here to answer any questions you may have about the TinyTan World.<br>
+        Reach out to us and we'll respond as soon as we can.<br><br>
+        email : tinytanworld1990@gmail.com<br>
+        web : www.Tinytan.com<br>
+        <br>
+        <hr>
+    </div>
+    <br />
+    <h2 style = "color : hsl(0, 25%, 88%)">Form :- </h2>
+    <form action = "javascript:submitform()" onSubmit = "return validate()">
+        <label for = "name" class = "text4">Name : </label>
+        <input type = "text" name = "name" id = "name" class = "text4" style = "background-color: #ac99c2" required><br /><br />
+        <label for = "email" class = "text4">Email : </label>
+        <input type="text" name = "email" id = "email" class = "text4" style = "background-color: #ac99c2" required><br /><br />
+        <label for = "genre" class = "text4">Favourite Song : </label>
+        <input list = "genre" class = "text4" style = "background-color: #ac99c2" required> <br /><br />
+        <datalist id = "genre">
+            <option value = "Magic Shop"></option>
+            <option value = "Mic Drop"></option>
+            <option value = "Dream ON"></option>
+            <option value = "Dynamite"></option>
+            </datalist>
+        <br />
+        <input type = "checkbox" name = "checkbox" id = "checkbox" class = "text4">
+        <label for = "checkbox" class = "text4">Subscribe to our daily Newsletter via Email</label>
+        <br /><br />
+        <input type = "submit" name = "submit" value = "Submit" style = "background-color: #ac99c2; color : white; font-size:15px"><br /><br />
+        </form>
+        <script>
+            function validate()
+            {
+                return true;
+            }
+            function submitform()
+            {
+                window.alert("Form submitted");
+            }
+        </script>
+        <hr>
+        <p class="footer">All rights reserved</p>
     </body>
 </html>
