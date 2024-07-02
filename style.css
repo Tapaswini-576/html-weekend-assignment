@@ -16,6 +16,9 @@
 {
     background-color : black;
     overflow : hidden;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .navigationBar a
 {
