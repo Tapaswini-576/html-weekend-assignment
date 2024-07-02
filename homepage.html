@@ -7,13 +7,23 @@
     <body style = "background-color: hsl(283, 16%, 65%)">
         <div class = "verticalAlignParent">
                 <nav class = "navigationBar">
+                    <span>
                     <img src = "b1.jpg" alt = "logo" class = "imageDim verticalAlignTextBottom">
-                    The TinyTan World
-                    <a href = "contact.html" target ="_blank" class = "" onclick="active()" id = "contact">Contact Us</a>
+                    <a href="homepage.html" target="_self" class="" onclick="activeEle()" id="home">The TinyTan World</a>
+                    </span>
+                    <span>
+                    <a href = "contact.html" target ="_blank" class = "" onclick="activeEle1()" id = "contact">Contact Us</a>
+                    </span>
                     <script type = "text/javascript">
-                        function active()
+                        function activeEle()
+                        {
+                            document.getElementById("home").classList.add("active");
+                            document.getElementById("contact").classList.remove("active");
+                        }
+                        function activeEle1()
                         {
                             document.getElementById("contact").classList.add("active");
+                            document.getElementById("remove").classList.remove("active");
                         }
                     </script>
                 </nav>
@@ -38,7 +48,7 @@ Fun Fact: If they’re being noisy and talkative while crossing over a puddle, i
                 RM (Kim Nam Joon):Birthdate: September 12, 1994.Nickname: Formerly known as Rap Monster, he changed his stage name to RM, which stands for “Real Me.”
                 Jin (Kim Seok Jin):Birthdate: December 4, 1992.Cooking Enthusiast: Loves cooking and taking selcas.
                 Suga (Min Yoon Gi):Birthdate: March 9, 1993.Stage Name Origin: Derived from “shooting guard” (his position in basketball) and “sugar.”
-                J-Hope (Jung Ho Seok):Birthdate: February 18, 1994.Dance Machine: Known for his powerful dance moves.
+            
             </header>
             
         </div>
