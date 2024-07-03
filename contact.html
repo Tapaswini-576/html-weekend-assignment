@@ -7,9 +7,25 @@
     <body style = "background-color: hsl(284, 31%, 48%)">
         <div class = "verticalAlignParent">
                 <nav class = "navigationBar">
+             <span>
                     <img src = "b1.jpg" alt = "logo" class = "imageDim verticalAlignTextBottom">
-                    The Wizarding World
-                    <a href = "contact.html" target ="_self" id = "contact">Contact Us</a>
+                    <a href="homepage.html" target="_self" class="" onclick="activeEle()" id="home">The TinyTan World</a>
+                    </span>
+                    <span>
+                    <a href = "contact.html" target ="_blank" class = "" onclick="activeEle1()" id = "contact">Contact Us</a>
+                    </span>
+                    <script type = "text/javascript">
+                        function activeEle()
+                        {
+                            document.getElementById("home").classList.add("active");
+                            document.getElementById("contact").classList.remove("active");
+                        }
+                        function activeEle1()
+                        {
+                            document.getElementById("contact").classList.add("active");
+                            document.getElementById("remove").classList.remove("active");
+                        }
+                    </script>
                 </nav>
         </div>
     <hr>
